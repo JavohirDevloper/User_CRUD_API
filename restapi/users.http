@@ -1,0 +1,40 @@
+POST http://localhost:8563/users
+Content-Type: application/json
+
+{
+ "first_name": "Javohirr",
+ "last_name": "Muhammadiyevv",
+ "username": "javohirrb4",
+ "password": "1234"
+}
+
+###
+GET http://localhost:8563/users
+
+
+###
+GET http://localhost:8563/users/64b882036354f9c2b22ac121
+
+
+###
+PATCH http://localhost:8563/users/64b882036354f9c2b22ac121
+Content-Type: application/json
+
+{
+  "first_name": "Quvonchbekk",
+  "last_name": "Muysinovv",
+  "username": "quvonch"
+}
+
+
+###
+PUT http://localhost:8563/users/64b882036354f9c2b22ac121
+Content-Type: application/json
+
+{
+  "password": "qwerty"
+}
+
+
+###
+DELETE http://localhost:8563/users/64b882036354f9c2b22ac121
